@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Struktur Kelas - XI RPL 2</title>
+    
+    <style>
+        /* Background halaman */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #dfe9f3, #ffffff);
+            margin: 0;
+            padding: 30px;
+        }
+
+        /* Container utama */
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        /* Nama sekolah bergerak */
+        .sekolah {
+            overflow: hidden;
+            white-space: nowrap;
+            background: #0d6efd;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .sekolah h1 {
+            display: inline-block;
+            margin: 0;
+            animation: bergerak 8s linear infinite;
+        }
+
+        @keyframes bergerak {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Judul */
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        /* Tabel */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        th {
+            background: #0d6efd;
+            color: white;
+            padding: 15px;
+        }
+
+        td {
+            padding: 13px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Efek baris */
+        tbody tr:nth-child(even) {
+            background-color: #f4f8ff;
+        }
+
+        tbody tr:hover {
+            background-color: #dbeafe;
+            transform: scale(1.01);
+            transition: 0.2s;
+        }
+
+        /* Badge jabatan */
+        .jabatan {
+            background: #198754;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 25px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            table {
+                font-size: 12px;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Nama sekolah bergerak -->
+        <div class="sekolah">
+            <h1>🏫 SMK AL-BASYARIAH</h1>
+        </div>
+
+        <h2>STRUKTUR ORGANISASI KELAS</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Jabatan</th>
+                    <th>Nama</th>
+                    <th>Keterangan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <span class="jabatan">Wali Kelas</span>
+                    </td>
+                    <td>Muhammad Nofal Arrafii</td>
+                    <td>Pembimbing Kelas</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <span class="jabatan">Ketua Kelas</span>
+                    </td>
+                    <td>Cahya Dzaki</td>
+                    <td>Memimpin Kelas</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>
+                        <span class="jabatan">Wakil Ketua</span>
+                    </td>
+                    <td>M. Naufal</td>
+                    <td>Membantu Ketua</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>
+                        <span class="jabatan">Sekretaris</span>
+                    </td>
+                    <td>Salsa/Nurfadillah</td>
+                    <td>Administrasi Kelas</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>
+                        <span class="jabatan">Bendahara</span>
+                    </td>
+                    <td>Abizar/Nindya</td>
+                    <td>Keuangan Kelas</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>
+                        <span class="jabatan">Seksi Kebersihan</span>
+                    </td>
+                    <td>(Masukan Nama)</td>
+                    <td>Kebersihan Kelas</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>
+                        <span class="jabatan">Seksi Keamanan</span>
+                    </td>
+                    <td>(Masukan Nama)</td>
+                    <td>Keamanan Kelas</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="footer">
+            2026 SMK Al-Basyariah | Struktur Kelas
+        </div>
+
+    </div>
+
+</body>
+</html>
